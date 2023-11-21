@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>100 Days Challenge DAY 1</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                dblue: '#43389F',
+                lblue: '#4ec6ca',
+              },
+              boxShadow: {
+                'xo': '0 0 13px 0 rgba(0, 0, 0, 0.2)',
+              },
+              fontFamily: {
+                'mono': ['Courrier New', "Courier"]
+              },
+            }
+          }
+        }
+      </script>
+  </head>
+
+  <body class="antialiased">
+    <div class="flex justify-center items-center min-h-screen ">
+        <div class="flex flex-col gap-0 justify-center items-center h-[400px] w-[400px] border-[2px] rounded-md shadow-xo 
+                    bg-gradient-to-tr from-dblue from-0% to-lblue to-100%" >
+            <div class="flex flex-row h-[100px] w-[200px]">
+                <div class="flex items-start"> 
+                    <div class="z-1 -ml-[12px] h-[40px] w-[20px] bg-white rounded-sm rotate-[50deg]"></div>
+                    <div class="z-10 -ml-1 h-[100px] w-[24px] bg-white rounded-sm shadow-xo"></div>
+                </div>
+                <div class="z-[8] -ml-[17px] rounded-full border-[24px] border-white h-[100px] w-[100px] shadow-xo"></div>
+                <div class="z-[6] -ml-[17px] rounded-full border-[24px] border-white h-[100px] w-[100px] shadow-xo"></div>
+                <div></div>
+            </div>
+            <span class="z-[20] font-mono text-[82px] text-left leading-[60px] mt-[6px] font-bold text-white uppercase">Days</span>
+            <span class="z-[20] font-mono text-[23px] text-left leading-[20px] font-bold text-white uppercase tracking-[0.04em]">CSS Challenge</span>
+        </div>
+    </div>
+  </body>
+</html>
